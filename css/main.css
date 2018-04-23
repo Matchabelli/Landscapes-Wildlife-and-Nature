@@ -1,0 +1,341 @@
+@charset "UTF-8";
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-repeat: no-repeat;
+	background-position: center center fixed;
+	background-image: url(../images/Nikon_Camera.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#register fieldset legend {
+	color: rgba(243,243,242,0.96);
+	text-shadow: 10px 5px 10px rgba(0,0,0,1.00);
+}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-style: normal;
+	color: rgba(243,243,242,0.96);
+	text-shadow: 10px 5px 10px rgba(0,0,0,1.00);
+}
+#register fieldset label {
+	color: rgba(243,243,242,0.96);
+	text-shadow: 10px 5px 5px rgba(0,0,0,1.00);
+	font-size: 20px;
+}
+.contactArea #register fieldset {
+	background-color: rgba(41,59,101,0.35);
+	text-align: justify;
+	position: relative;
+}
+p {
+	font-size: 1.25em;
+	line-height: 1.6;
+	color: #FFFFFF;
+	text-shadow: 5px 10px 15px rgba(0,0,0,1.00);
+}
+.row .col-lg-12.text-center .copyright {
+	font-size: 1.25em;
+	line-height: 1.6;
+	color: #FFFFFF;
+	text-shadow: 5px 10px 15px rgba(0,0,0,1.00);
+}
+.box .col-lg-12 .text_column {
+	font-size: 22px;
+	line-height: 1.6;
+	color: rgba(255,255,255,1);
+	text-shadow: 5px 10px 15px rgba(0,0,0,1.00);
+	text-align: left;
+	font-style: normal;
+}
+hr {
+	max-width: 400px;
+	border-color: #999999;
+}
+.brand, .address-bar {
+	display: none;
+	text-shadow: 5px 5px 3px rgba(0,0,0,1.00);
+}
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-family: italianno;
+	font-style: normal;
+	color: rgba(41,59,101,0.35);
+}
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
+	background-color: #282A31;
+}
+.navbar.navbar-default .container #bs-example-navbar-collapse-1 {
+	background-color: rgba(41,59,101,0.35);
+}
+.img-full {
+	min-width: 100%;
+}
+.brand-before, .brand-name {
+	text-transform: capitalize;
+}
+.brand-before {
+	margin: 15px 0;
+}
+.brand-name {
+	margin: 0;
+	font-size: 4em;
+}
+.tagline-divider {
+	margin: 15px auto 3px;
+	max-width: 250px;
+	border-color: #999999;
+}
+.box {
+	margin-bottom: 20px;
+	padding: 30px 15px;
+	background: #fff;
+	background-color: rgba(41,59,101,0.35);
+}
+.intro-text {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	color: rgba(243,243,242,0.96);
+	text-shadow: 0 5px 3px rgba(0,0,0,1.00);
+	text-align: center;
+}
+/*Photo Gallery Options*/
+/*Eliminates padding, centers the thumbnail */
+body, html {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+/* Styles the thumbnail */
+a.lightbox img {
+	width: 275px;
+	height: 275px;
+	border: 3px solid grey;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	margin: 94px 20px 20px 20px;
+}
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+.lightbox-target img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 1200px;
+	height: 800px;
+	border: 3px solid grey;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+/* Styles the close link, adds the slide down transition */
+a.lightbox-close {
+	display: block;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	background: white;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: -80px;
+	right: 0;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+a.lightbox-close:before {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top: 10px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+a.lightbox-close:after {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: black;
+	position: absolute;
+	left: 26px;
+	top: 10px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+.lightbox-target:target {
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+.lightbox-target:target img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.lightbox-target:target a.lightbox-close {
+	top: 0px;
+}
+/* Footer Area */
+
+footer {
+	background: #fff;
+	background-color: rgba(40,42,49,0.25);
+}
+footer p {
+	margin: 0;
+	padding: 50px 0;
+}
+
+#hero .hero_header .light {
+	color: rgba(255,255,255,0.96);
+	font-family: "Trebuchet MS";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.5em;
+	text-shadow: 10px 5px 10px rgba(0,0,0,1.00);
+}
+#about {
+	background-color: rgba(40,42,49,0.25);
+}
+#hero {
+	background-color: rgba(40,42,49,0.25);
+	padding-left: 450px;
+	text-shadow: 0 0;
+}
+
+.row .col-md-4 .well {
+	border-color: rgba(40,42,49,0.25);
+	background-color: rgba(40,42,49,0.25);
+}
+
+ul li a {
+	color: rgba(243,243,242,0.96);
+	text-shadow: 10px 5px 10px rgba(0,0,0,1.00);
+}
+.col-md-4 .well label {
+	color: rgba(243,243,242,0.96);
+	text-shadow: 10px 5px 10px rgba(0,0,0,1.00);
+	font-size: large;
+}
+#about .contactArea {
+	padding-left: 175px;
+	padding-right: 175px;
+}
+
+@media screen and (min-width:768px) {
+.brand {
+	display: inherit;
+	margin: 0;
+	padding: 30px 0 10px;
+	text-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+	font-family: italianno;
+	font-size: 9em;
+	font-weight: 400;
+	line-height: normal;
+	color: #FFFFFF;
+	font-style: normal;
+	text-align: center;
+	background-color: rgba(40,42,49,0.25);
+}
+
+.top-divider {
+	margin-top: 0;
+}
+.img-left {
+	float: left;
+	margin-right: 25px;
+}
+.address-bar {
+	display: inherit;
+	margin: 0;
+	padding: 0 0 40px;
+	text-align: center;
+	text-shadow: 0 0 rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size: 1.25em;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #fff;
+}
+.navbar {
+	border-radius: 0;
+}
+.navbar-header {
+	display: none;
+}
+.navbar {
+	min-height: 0;
+}
+.navbar-default {
+	border: none;
+	background: #fff;
+	background-color: rgba(40,42,49,0.25);
+}
+.navbar-nav>li>a {
+	line-height: normal;
+	background-color: rgba(40,42,49,0.25);
+}
+.navbar-nav {
+	display: table;
+	float: none;
+	margin: 0 auto;
+	table-layout: fixed;
+	font-size: 1.25em;
+	color: rgba(243,243,242,0.96);
+	font-family: "Cambria", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color: rgba(40,42,49,0.25);
+}
+}
+
+@media screen and (min-width:1200px) {
+.box:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+}
+#about {
+	padding-left: 0px;
+}
